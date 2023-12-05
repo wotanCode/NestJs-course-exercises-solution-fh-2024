@@ -16,7 +16,9 @@ import { JoiValidationSchema } from './config/joi.validation';
       load: [EnvConfiguration],
       validationSchema: JoiValidationSchema,
     }), // debe ir de primero siempre, para configurar las envs
-    MongooseModule.forRoot(process.env.MONGODB),
+    MongooseModule.forRoot(process.env.MONGODB, {
+      dbName: 'pokemonsdb', //para railway
+    }),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
