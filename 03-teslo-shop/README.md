@@ -36,8 +36,11 @@ http://localhost:3000/api/seed
 
 Conectar NestJs con la base de datos
 <a href="https://docs.nestjs.com/techniques/database" target="blank">https://docs.nestjs.com/techniques/database</a>
+File Upload
+<a href="https://docs.nestjs.com/techniques/file-upload" target="blank">https://docs.nestjs.com/techniques/database</a>
 
 ```sh
 npm install @nestjs/typeorm typeorm
 npm install pg
+npm i -D @types/multer
 ```
