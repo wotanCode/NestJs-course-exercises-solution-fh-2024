@@ -32,7 +32,16 @@ http://localhost:3000/api/seed
 
 - Docker
 
-## Doc
+## Doc de los endpoints
+
+Documentación swagger de los endpoints
+
+```sh
+http://localhost:3000/api
+
+```
+
+## Doc externas
 
 Conectar NestJs con la base de datos
 <a href="https://docs.nestjs.com/techniques/database" target="blank">https://docs.nestjs.com/techniques/database</a>
@@ -48,3 +57,6 @@ jwt functionality
 
 Decorator composition
 <a href="https://docs.nestjs.com/custom-decorators#decorator-composition" target="blank">https://docs.nestjs.com/custom-decorators#decorator-composition</a>
+
+OpenAPI
+<a href="https://docs.nestjs.com/openapi/introduction" target="blank">https://docs.nestjs.com/openapi/introduction</a>
