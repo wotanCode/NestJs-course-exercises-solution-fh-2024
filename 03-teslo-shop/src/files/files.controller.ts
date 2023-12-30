@@ -1,21 +1,20 @@
-import { Response } from 'express';
-import { diskStorage } from 'multer';
-
 import {
-  BadRequestException,
   Controller,
   Get,
-  Param,
   Post,
-  Res,
+  Param,
   UploadedFile,
   UseInterceptors,
+  BadRequestException,
+  Res,
 } from '@nestjs/common';
-import { FileInterceptor } from '@nestjs/platform-express';
-
-import { FilesService } from './files.service';
-import { fileFilter, fileNamer } from './helpers';
 import { ConfigService } from '@nestjs/config';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { Response } from 'express';
+import { diskStorage } from 'multer';
+import { FilesService } from './files.service';
+
+import { fileFilter, fileNamer } from './helpers';
 
 @Controller('files')
 export class FilesController {
@@ -32,15 +31,13 @@ export class FilesController {
     const path = this.filesService.getStaticProductImage(imageName);
 
     res.sendFile(path);
-
-    return imageName;
   }
 
   @Post('product')
   @UseInterceptors(
     FileInterceptor('file', {
       fileFilter: fileFilter,
-      // limits: {fileSize: 1000},
+      // limits: { fileSize: 1000 }
       storage: diskStorage({
         destination: './static/products',
         filename: fileNamer,
@@ -49,17 +46,14 @@ export class FilesController {
   )
   uploadProductImage(@UploadedFile() file: Express.Multer.File) {
     if (!file) {
-      throw new BadRequestException('Make sure that file is an image');
+      throw new BadRequestException('Make sure that the file is an image');
     }
 
-    // const secureUrl = `${file.filename}`;
+    // const secureUrl = `${ file.filename }`;
     const secureUrl = `${this.configService.get('HOST_API')}/files/product/${
       file.filename
     }`;
 
-    return {
-      // fileName: file.originalname,
-      secureUrl,
-    };
+    return { secureUrl };
   }
 }

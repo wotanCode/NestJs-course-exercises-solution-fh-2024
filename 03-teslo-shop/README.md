@@ -36,11 +36,15 @@ http://localhost:3000/api/seed
 
 Conectar NestJs con la base de datos
 <a href="https://docs.nestjs.com/techniques/database" target="blank">https://docs.nestjs.com/techniques/database</a>
+
 File Upload
 <a href="https://docs.nestjs.com/techniques/file-upload" target="blank">https://docs.nestjs.com/techniques/database</a>
 
-```sh
-npm install @nestjs/typeorm typeorm
-npm install pg
-npm i -D @types/multer
-```
+Passaport
+<a href="https://docs.nestjs.com/recipes/passport" target="blank">https://docs.nestjs.com/recipes/passport</a>
+
+jwt functionality
+<a href="https://docs.nestjs.com/recipes/passport#jwt-functionality" target="blank">https://docs.nestjs.com/recipes/passport#jwt-functionality</a>
+
+Decorator composition
+<a href="https://docs.nestjs.com/custom-decorators#decorator-composition" target="blank">https://docs.nestjs.com/custom-decorators#decorator-composition</a>
