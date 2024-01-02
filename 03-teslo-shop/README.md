@@ -19,7 +19,7 @@ docker-compose up -d
 6. Levantar proyecto:
 
 ```sh
- npm run start:dev
+npm run start:dev
 ```
 
 7. Ejecutar Seed. Get method
@@ -60,3 +60,5 @@ Decorator composition
 
 OpenAPI
 <a href="https://docs.nestjs.com/openapi/introduction" target="blank">https://docs.nestjs.com/openapi/introduction</a>
+
+<a href="https://docs.nestjs.com/websockets/gateways" target="blank">https://docs.nestjs.com/websockets/gateways</a>
