@@ -28,6 +28,8 @@ npm run start:dev
 http://localhost:3000/api/seed
 ```
 
+8. Ejecutar proyecto `04-nest-teslo-shop-front` para probar opciones de chat con websocket.
+
 ## Requisitos
 
 - Docker
@@ -61,4 +63,5 @@ Decorator composition
 OpenAPI
 <a href="https://docs.nestjs.com/openapi/introduction" target="blank">https://docs.nestjs.com/openapi/introduction</a>
 
+GateWays
 <a href="https://docs.nestjs.com/websockets/gateways" target="blank">https://docs.nestjs.com/websockets/gateways</a>
