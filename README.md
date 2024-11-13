@@ -9,4 +9,4 @@ Proyectos de práctica usando el NestJs impartido por Fernando Herrera en su edi
 <hr/>
 
 #### Licencia
-Este proyecto está bajo la Licencia MIT.
+Todos los proyectos están bajo Licencia MIT.
